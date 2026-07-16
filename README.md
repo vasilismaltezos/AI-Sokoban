@@ -1,29 +1,48 @@
-1η Εργασια Τεχνητης Νοημοσυνης README
+## Requirements
 
-1. Οδηγίες εγκατάστασης-------------------------------------
-Τοποθετήστε όλα τα αρχεία του προγράμματος στον ίδιο φάκελο:
+- Python 3.x
 
-   erotima1/
-      aStar.py
-      board.py
-      main.py
-      sokoban.py
-      state.py
-      lvl1.txt
-      lvl2.txt
-      lvl3.txt
+---
 
-2. Τρόπος εκτέλεσης----------------------------------------
+## Run
 
-Από τερματικό:
+Place all project files in the same directory:
 
-a. Μεταβείτε στον φάκελο όπου βρίσκεται το main.py.
-b. Εκτελέστε:
-   python3 main.py
+```text
+aStar.py
+board.py
+main.py
+sokoban.py
+state.py
+lvl1.txt
+lvl2.txt
+lvl3.txt
+```
 
-4. Χρήση άλλου επιπέδου Sokoban----------------------------
+Open **Command Prompt** or **PowerShell**, navigate to the project directory, and run:
 
-Για να δοκιμάσετε άλλες πίστες:
-a. Στο main.py, αλλάξτε το όνομα του αρχείου που φορτώνει η Board στη γραμμη 43:
-   board.load("lvl2.txt") ή ("lvl3.txt")
-b. Εκτελέστε ξανά το πρόγραμμα όπως παραπάνω.
+```bash
+python main.py
+```
+
+---
+
+## Available Levels
+
+The project includes three sample Sokoban levels:
+
+- `lvl1.txt`
+- `lvl2.txt`
+- `lvl3.txt`
+
+To run a different level, edit the level filename loaded in `main.py`:
+
+```python
+board.load("lvl2.txt")   # or "lvl3.txt"
+```
+
+Then run the program again:
+
+```bash
+python main.py
+```
